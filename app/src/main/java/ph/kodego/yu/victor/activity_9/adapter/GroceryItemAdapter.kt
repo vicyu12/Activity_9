@@ -44,6 +44,7 @@ class GroceryItemAdapter (var groceryItems: ArrayList<GroceryItem>):
             this.groceryItem = groceryItem
 
             itemBinding.groceryItems.text = "${groceryItem.item} | ${groceryItem.price}"
+            itemBinding.icon.setImageResource(groceryItem.img)
 //            itemBinding.btnDeleteRow.setOnClickListener {
 //                Snackbar.make(itemBinding.root, "Delete by button",
 //                    Snackbar.LENGTH_SHORT).show()
