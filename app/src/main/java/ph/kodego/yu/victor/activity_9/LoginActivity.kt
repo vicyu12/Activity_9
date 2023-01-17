@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            var goToMain = Intent(this, MainActivity::class.java)
+            var goToMain = Intent(this, ViewPagerActivity::class.java)
             startActivity(goToMain)
         }
 
