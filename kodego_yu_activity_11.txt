@@ -1,0 +1,32 @@
+create table 'login' (
+  application_id integer,
+  email varchar[64],
+  password varchar[16],
+  first_name varchar[64],
+  last_name varchar[64],
+  confirm_password varchar[64]);
+
+create table 'grocery_item' (
+  grocery_item_id integer,
+  item_name varchar[128],
+  item_price double,
+  item_image integer);
+
+create table search_results (
+  search_results_id integer,
+  grocery_item_id integer);
+
+create table 'cart' (
+  cart_id integer,
+  order_id integer,
+  application_id integer,
+  grocery_item_id integer,
+  quantity integer,
+  amount double);
+
+create table 'transactions' (
+  transactions_id integer,
+  order_id integer,
+  payment_method varchar[64],
+  paid boolean,
+  received boolean);
